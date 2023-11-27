@@ -16,6 +16,7 @@ body {
 }
 
 header.navbar-container {
+  background-color: red;
   max-width: 1200px;
   width: 100%;
   margin-inline: auto;
@@ -28,7 +29,7 @@ header.navbar-container {
 }
 
 header.navbar-container .logo img {
-  width: 150px;
+  height: 50px;
 }
 
 header.navbar-container .nav-list ul {
@@ -159,6 +160,7 @@ main aside .social-media li a {
 
 main aside .social-media li a:hover {
   color: #89b0d9;
+  transform: scale(2.0);
 }
 
 /* Medium devices (landscape tablets, 768px and down) */
