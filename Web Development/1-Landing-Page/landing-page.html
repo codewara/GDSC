@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Landing Page UPI</title>
+        <link rel="stylesheet" href="LPStyle.css">
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+          integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer"
+        >
+    </head>
+    <body>
+        <header class="navbar-container">
+            <div class="logo">
+              <img class="upi" src="images/logo-text.png" onclick="redirect(1)" alt="Universitas Pendidikan Indonesia">
+              <img class="kampus" src="images/logo-kampus.png" onclick="redirect(2)" alt="Kampus Merdeka">
+            </div>
+            <nav class="nav-list">
+              <ul>
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#">Kampus</a></li>
+                <li><a href="#">Dosen</a></li>
+                <li><a href="#contact">Kontak</a></li>
+              </ul>
+              <div class="dark-mode-switch">
+                <label class="slider">
+                  <input type="checkbox" onclick="darkmode()">
+                  <span class="slider-round"></span>
+                </label>
+              </div>
+            </nav>
+          </header>
+
+          <main id="home">
+            <div class="background"><img src="./images/isola.jpg"></div>
+            <div class="content">
+              <div class="content-description">
+                <h1 class="title">Universitas Pendidikan Indonesia</h1>
+                <p>
+                  Universitas Pendidikan Indonesia, adalah lembaga pendidikan tinggi yang terkemuka di Indonesia. Universitas
+                  ini memiliki reputasi yang kuat dalam bidang pendidikan dan penelitian. Didirikan pada tahun 1954, UPI telah
+                  menjadi pusat keunggulan dalam menghasilkan para pendidik dan tenaga pendidik yang berkualitas. Dengan
+                  berbagai program studi dan fasilitas modern, UPI berkomitmen untuk mendukung pengembangan potensi individu
+                  dan meningkatkan mutu pendidikan di Indonesia.
+                </p>
+                <button onclick="redirect(1)">Lebih lanjut</button>
+              </div>
+      
+              <div class="content-image">
+                <img src="images/logo-circle.png" alt="Universitas Pendidikan Indonesia" />
+              </div>
+            </div>
+      
+            <aside>
+              <div class="social-media">
+                <ul>
+                  <li>
+                    <a onclick="redirect(3)"><i class="fab fa-youtube"></i></a>
+                  </li>
+                  <li><a onclick="redirect(4)"><i class="fab fa-linkedin-in"></i></a></li>
+                  <li><a onclick="redirect(5)"><i class="fab fa-twitter"></i></a></li>
+                  <li><a onclick="redirect(6)"><i class="fab fa-facebook"></i></a></li>
+                </ul>
+              </div>
+            </aside>
+          </main>
+
+          <footer class="contact-container" id="contact">
+            <div class="con-list">
+            </div>
+            <div class="social-media">
+              <ul>
+                <li><a onclick="redirect(3)"><i class="fab fa-github"></i></a></li>
+                <li><a onclick="redirect(4)"><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a onclick="redirect(5)"><i class="fab fa-instagram"></i></a></li>
+                <li><a onclick="redirect(6)"><i class="fa fa-envelope-open"></i></a></li>
+              </ul>
+            </div>
+          </footer>
+        <script src="LPScript.js"></script>
+</body>
+</html>
